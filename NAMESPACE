@@ -1,0 +1,22 @@
+import(Matrix)
+import(methods)
+import(minqa)
+import(survey)
+import(lme4)
+importFrom(utils,setTxtProgressBar)
+importFrom(utils,txtProgressBar)
+importFrom("stats", "ave", "model.frame", "pnorm", "weights")
+importFrom("stats", "printCoefmat")
+importFrom("stats", "vcov")
+export(svy2lme,svy2relmer)
+export(boot2lme)
+
+S3method(print,svy2lme)
+S3method(print, boot2lme)
+
+S3method(coef,svy2lme)
+
+S3method(vcov,svy2lme)
+S3method(vcov,boot2lme)
+
+
